@@ -9,7 +9,6 @@ module.exports.controller = function (app, io) {
         console.log('client connected');
 
         socket.on('new message', function (data) {
-            // we tell the client to execute 'new message'
             console.log('received');
             socket.broadcast.emit('new message', {
                 username: socket.username,

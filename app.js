@@ -27,7 +27,6 @@ app.use(expressSession({
     saveUninitialized: true
 }));
 
-// dynamically include routes (Controller)
 fs.readdirSync('./controllers').forEach(function (file) {
     if (file.substr(-3) == '.js') {
         route = require('./controllers/' + file);
