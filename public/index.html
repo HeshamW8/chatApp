@@ -55,15 +55,15 @@
 							<span class="input-group-addon"><i class="fa fa-user"></i></span>
 							<input type="text" class="form-control" id="signinEmail" placeholder="email address">
 						</div>
-						<span class="help-block"></span>
+						<span class="help-block" id="resultLogin"></span>
 
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-lock"></i></span>
 							<input type="password" class="form-control" id="signinPassword" placeholder="Password">
 						</div>
-						<span class="help-block">Password error</span>
+						<span class="help-block" id="error-block" style="display:none;">Password error</span>
 
-						<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+						<button class="btn btn-lg btn-primary btn-block validate" type="submit">Login</button>
 					</form>
 				</div>
 			</div>
@@ -124,7 +124,7 @@
 							<span class="input-group-addon"><i class="fa fa-user"></i></span>
 							<input type="text" class="form-control" id="signupEmail" placeholder="email address">
 						</div>
-						<span class="help-block"></span>
+						<span class="help-block" id="resultSignup"></span>
 
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-lock"></i></span>
@@ -132,7 +132,7 @@
 						</div>
 						<span class="help-block"></span>
 
-						<button class="btn btn-lg btn-primary btn-block" type="submit">Signup</button>
+						<button class="btn btn-lg btn-primary btn-block validate" type="submit">Signup</button>
 					</form>
 				</div>
 			</div>
