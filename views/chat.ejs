@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>BOOTSTRAP CHAT EXAMPLE</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/chat.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/chat.js"></script>
+
+</head>
+
+<body style="font-family:Verdana">
+
+    <h1 id='username'>
+        <%= fullname %>
+    </h1>
+
+    <div class="container">
+        <div class="row " style="padding-top:40px;">
+            <h3 class="text-center">CHAT VIEW</h3>
+            <br /><br />
+            <div class="col-md-8">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        CHAT PANEL
+                    </div>
+                    <div class="panel-body">
+                        <ul class="media-list" id="chat-panel">
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMessage" placeholder="Enter Message" />
+                            <span class="input-group-btn">
+                                        <button class="btn btn-info" type="button" onclick="sendMessage()">SEND</button>
+                                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        ONLINE USERS
+                    </div>
+                    <div class="panel-body">
+                        <ul class="media-list" id="online-users">
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
